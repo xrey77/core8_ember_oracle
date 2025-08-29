@@ -5,12 +5,10 @@ using Microsoft.Extensions.Configuration; // For configuration
 
 namespace core8_ember_oracle.Services
 {
-
     public interface IEmailService {
         void sendMail(string to,string fullname, string subject, string msgBody);
         void sendMailToken(string to, string subject, string msgBody);
     }
-
 
 public class EmailService : IEmailService
 {
