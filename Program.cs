@@ -24,7 +24,7 @@ builder.Services.AddScoped<IEmailService, EmailService>();
 
 builder.Services.AddSwaggerGen(c =>
     {
-        c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "HARLEY DAVIDSON", Description="RESTful API Documentation", Version = "v1" });
+        c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "HARLEY DAVIDSON INC.", Description="RESTful API Documentation", Version = "v1" });
         c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
         {
             Name = "Authorization",
