@@ -44,7 +44,7 @@ namespace core8_ember_oracle.Controllers.Products
                     var model = _mapper.Map<IList<ProductModel>>(products);
                     return Ok(new {totpage = totalpage, page = page, products=model});
                 } else {
-                    return BadRequest(new {statuscode=400, message="No Data found."});
+                    return NotFound(new {statuscode=404, message="No Data found."});
                 }
             } catch(AppException ex) {
                return BadRequest(new {statuscode = 400, Message = ex.Message});

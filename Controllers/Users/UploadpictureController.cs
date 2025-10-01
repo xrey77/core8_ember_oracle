@@ -105,7 +105,7 @@ namespace core8_ember_oracle.Controllers.Users
                     }
 
                 }
-                return BadRequest(new { statuscode = 400, message = "Profile Picture not found."});
+                return NotFound(new { statuscode = 401, message = "Profile Picture not found."});
 
         }
     }

@@ -70,7 +70,7 @@ namespace core8_ember_oracle.Services
             userdata.Secretkey = secretkey.ToUpper();             
             userdata.Password = BCrypt.Net.BCrypt.HashPassword(passwd);
             userdata.Profilepic = "https://localhost:7122/users/pix.png";
-            userdata.Roles="USER";
+            userdata.Roles="USER";        
             _context.Users.Add(userdata);                
             _context.SaveChanges();
             return userdata;
