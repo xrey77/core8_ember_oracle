@@ -17,8 +17,8 @@ Features :
 4. Product Listings and Pagination
 5. User Account Activation via Email
 6. Auto Mapper Dependency Injection
-7. Swagger RESTful API Documentation
-   https://localhost:7122/swagger/
+7. Swagger RESTful API Documentation, https://localhost:7122/swagger/index.html
+   
 
 If you want to test, do the following:
 1. Setup ORACLE 23 Docker container

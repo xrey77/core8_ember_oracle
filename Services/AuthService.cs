@@ -44,7 +44,7 @@ namespace core8_ember_oracle.Services
             }
 
             User xusername = _context.Users.Where(c => c.UserName == userdata.UserName).FirstOrDefault();
-            if (xusername != null) {
+            if (xusername is not null) {
                 throw new AppException("Username was already taken...");
             }
 
